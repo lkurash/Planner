@@ -1,0 +1,15 @@
+.dashboard {
+  display: flex;
+  font-family: var(--raleway);
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  color: #5f6368;
+
+
+  h1 {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}

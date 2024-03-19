@@ -1,0 +1,38 @@
+.sideMenu {
+  width: 30%;
+  height: 100%;
+  // background-color: rgb(144, 127, 255);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 20px 0px 0px;
+}
+
+.wrapperButton {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 20px -25px;
+  padding-left: 50px;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  font-family: var(--mukta);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #dbdbdba7;
+  }
+
+  span {
+    color: #202124;
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.active {
+  background-color: #feefc3;
+}
