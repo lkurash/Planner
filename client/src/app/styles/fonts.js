@@ -3,7 +3,7 @@ import { Raleway, Mukta } from "next/font/google";
 export const mukta = Mukta({
   subsets: ["latin"],
   variable: "--mukta",
-  weight: "400",
+  weight: ["400", "600", "700", "800"],
 });
 
 export const raleway = Raleway({

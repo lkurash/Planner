@@ -11,7 +11,7 @@ const Main = async () => {
   return (
     <main className={styles.main}>
       <NoteForm />
-      <div>
+      <div className={styles.displayNotes}>
         <Notes notes={notes} />
       </div>
     </main>

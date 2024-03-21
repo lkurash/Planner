@@ -1,7 +1,126 @@
-.inputTextNote {
+$border-radius: 8px;
+$box-shadow: 0 0 0.4em rgb(112, 112, 112);
+$widthNoteForm: 85%;
+$maxWidthNoteForm: 550px;
+$marginBottom: 20px;
+$color: #6e6e6e;
+
+.dummyNoteForm {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: $widthNoteForm;
+  max-width: $maxWidthNoteForm;
+  color: $color;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin-bottom: $marginBottom;
+  cursor: text;
+
+  p {
+    width: 80%;
+    font-size: 18px;
+    margin-top: 3px;
+  }
 }
 
-.buttonCreateNote {
-  width: 50px;
-  height: 50px;
+.dummyNoteForm:hover {
+  background-color: #f1f1f14f;
+}
+
+.actionContainer {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.noteForm {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  padding: 10px 20px 0px 15px;
+  width: $widthNoteForm;
+  max-width: $maxWidthNoteForm;
+  border-radius: $border-radius;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin-bottom: $marginBottom;
+
+  .header {
+    min-height: 45px;
+    height: max-content;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main {
+    min-height: 45px;
+    height: max-content;
+  }
+
+  .inputNote {
+    width: 90%;
+    height: 100%;
+    padding: 5px;
+  }
+
+  .inputTitleNote {
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 1;
+    color: #4d4d4d;
+  }
+
+  .inputTextNote {
+    font-size: 15px;
+    opacity: 1;
+    color: #474747;
+  }
+
+  .inputTitleNote::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.8;
+    color: #474747;
+  }
+
+  .inputTextNote::placeholder {
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 1;
+    color: #4d4d4d;
+  }
+
+  .actionContainer {
+    width: 100%;
+    height: 40px;
+
+    .buttonsPanel {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 50%;
+    }
+  }
+
+  .buttonCreateNote {
+    letter-spacing: 0.2px;
+    background-color: none;
+    border-radius: $border-radius;
+    width: 70px;
+    height: 90%;
+    color: #474747;
+  }
+
+  .buttonCreateNote:hover {
+    background-color: #4d4d4d0f;
+    cursor: pointer;
+    color: #1d1d1d;
+  }
 }

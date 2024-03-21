@@ -18,11 +18,11 @@ const Notes = ({ notes }) => {
   }, [notesStore]);
 
   return (
-    <div>
+    <>
       {allNotes.map((note) => (
         <Note note={note} key={note.id} />
       ))}
-    </div>
+    </>
   );
 };
 

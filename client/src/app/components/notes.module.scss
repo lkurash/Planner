@@ -1,0 +1,17 @@
+.note {
+  width: 30%;
+  height: max-content;
+  min-width: 200px;
+  min-height: 15%;
+
+  margin: 5px;
+  padding: 10px 5px 5px 10px;
+
+  border-radius: 5px;
+  border: 0.1px solid rgb(201, 200, 200);
+  box-shadow: 0 0 0.2em rgb(235, 235, 235);
+
+  .note-text{
+    font-size: 14px;
+  }
+}

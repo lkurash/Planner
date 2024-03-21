@@ -23,7 +23,10 @@ class NotesController {
     try {
       const { userId } = request.body;
 
-      const notes = await db.Notes.findAll({ where: userId });
+      const notes = await db.Notes.findAll({
+        where: userId,
+        order: [["id", "DESC"]],
+      });
 
       return response.json(notes);
     } catch (error) {}

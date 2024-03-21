@@ -21,6 +21,15 @@ body {
   font-family: var(--mukta) sans-serif;
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
 button {
   border: none;
+}
+
+span {
+  background-color: #ffffff00;
 }
